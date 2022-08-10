@@ -32,5 +32,5 @@ public class Employee {
 	private String email;
 	@JoinColumn(name = "dept_id")
 	@ManyToOne
-	private Department daparment;
+	private Department department;
 }

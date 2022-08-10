@@ -31,6 +31,6 @@ public class Department {
 	@Column(name = "dept_name", length = 100, nullable = false)
 	private String deptName;
 	
-	@OneToMany(mappedBy = "employees")
-	private List<Employee> employees;
+	/*@OneToMany(mappedBy = "employees")
+	private List<Employee> employees;*/
 }
