@@ -8,6 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -31,6 +32,7 @@ public class Employee {
 	@Column(name = "email", unique = true)
 	private String email;
 	@JoinColumn(name = "dept_id")
+	@JsonIgnore
 	@ManyToOne
 	private Department department;
 }
