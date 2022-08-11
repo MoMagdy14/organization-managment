@@ -1,19 +1,19 @@
 package com.ntg.organization.organization.controller;
-
+import java.util.List;
 import com.ntg.organization.organization.entity.Department;
 import com.ntg.organization.organization.service.DepartmentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-
+import com.ntg.organization.organization.dto.DepartmentDTO;
 import java.util.List;
 
 @RestController
-@RequestMapping("/dep/v1")
+@RequestMapping("/dept/v1")
 public class DepartmentController {
     @Autowired
     private DepartmentService departmentService;
     @GetMapping(value = "/all")
-    public List<Department> getAllDepartment() {
+    public List<DepartmentDTO> getAllDepartment() {
         return departmentService.getAllDepartment();
     }
 
@@ -29,3 +29,23 @@ public class DepartmentController {
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+	
+	
+
+
