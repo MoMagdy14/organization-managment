@@ -36,7 +36,7 @@ public class Department {
 	
 
 
-	@OneToMany(mappedBy = "employees")
+	@OneToMany(mappedBy = "department")
 	private List<Employee> employees;
 
 	//@JsonIgnore

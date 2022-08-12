@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import java.util.ArrayList;
-import java.util.List
+import java.util.List;
 import org.springframework.beans.BeanUtils;
 import com.ntg.organization.organization.entity.Department;
 import com.ntg.organization.organization.respository.DepartmentRepository;
